@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>QuickCampaigns.io – Free Beta Access</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+
+  <style>
+    :root {
+      --primary: #635BFF;
+      --accent: #88F0FC;
+      --success: #08C48C;
+      --dark: #1E1E2F;
+      --light: #F8F9FC;
+    }
+    * { margin:0; padding:0; box-sizing:border-box; }
+    body {
+      font-family:'Poppins', sans-serif;
+      background: linear-gradient(135deg, #F0F2FF, var(--light));
+      color: var(--dark); line-height:1.6; min-height:100vh;
+    }
+    header, footer {
+      text-align:center;
+      padding:20px;
+    }
+    header h1 {
+      font-size:2.4rem; color:var(--primary);
+    }
+    header .beta-badge {
+      background:var(--success); color:#fff;
+      padding:6px 16px; border-radius:30px;
+      font-weight:600; display:inline-block;
+      animation:pulse 2s infinite;
+    }
+    .container { max-width:1200px; margin:auto; padding:40px 15px; }
+
+    .hero {
+      display:flex; flex-wrap:wrap;
+      align-items:center; gap:40px;
+      margin-bottom:60px;
+    }
+    .hero-content {
+      flex:1 1 400px;
+      text-align:left;
+    }
+    .hero-content h1 {
+      font-size:2.8rem; margin-bottom:15px;
+    }
+    .highlight {
+      color:var(--primary);
+      position:relative;
+    }
+    .highlight::after {
+      content:""; position:absolute; bottom:-8px; left:0;
+      width:100%; height:4px;
+      background:var(--accent); border-radius:2px;
+    }
+    .subheading {
+      font-size:1.2rem; margin-bottom:25px;
+      color:#495057;
+    }
+    .gif-container {
+      flex:1 1 300px;
+      max-width:400px;
+    }
+    .gif-placeholder {
+      position:relative;
+      background:linear-gradient(45deg, var(--primary), #3A3ABD);
+      padding:80px 20px; color:#fff;
+      text-align:center; font-size:1.2rem;
+      border-radius:20px;
+    }
+    .gif-label {
+      position:absolute; bottom:10px; right:10px;
+      background:rgba(0,0,0,0.5); color:#fff;
+      font-size:0.75rem; padding:5px 10px;
+      border-radius:15px;
+    }
+    .google-btn {
+      background:var(--primary); color:#fff;
+      border:none; border-radius:8px;
+      padding:14px 20px;
+      font-size:1rem; cursor:pointer;
+      display:inline-flex;
+      align-items:center; gap:10px;
+      transition:0.3s;
+      margin-top:10px;
+    }
+    .google-btn:hover {
+      background:#3A3ABD;
+    }
+
+    .benefit-cards {
+      display:grid;
+      grid-template-columns:repeat(auto-fit, minmax(250px,1fr));
+      gap:25px;
+      margin-bottom:60px;
+    }
+    .benefit-card {
+      background:#fff; padding:25px;
+      border-radius:15px; text-align:center;
+      box-shadow:0 5px 15px rgba(99,91,255,0.1);
+    }
+    .benefit-icon {
+      font-size:2rem; color:var(--primary);
+      margin-bottom:15px;
+    }
+
+    .video-testimonials {
+      padding:50px 15px; background:#fff;
+      text-align:center;
+    }
+    .video-testimonials h2 {
+      font-size:2rem; margin-bottom:10px;
+      color:var(--dark);
+    }
+    .videos-container {
+      display:grid;
+      grid-template-columns:repeat(auto-fit, minmax(260px,1fr));
+      gap:25px; margin-top:30px;
+    }
+    .video-card {
+      position:relative;
+      background:var(--primary);
+      color:#fff;
+      border-radius:15px;
+      padding:20px;
+      aspect-ratio:9/16;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      text-align:center;
+    }
+    .play-icon {
+      position:absolute; bottom:15px; right:15px;
+      background:var(--accent);
+      color:var(--dark);
+      width:40px; height:40px;
+      border-radius:50%;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      cursor:pointer;
+    }
+
+    .cta-section {
+      background:var(--light);
+      padding:50px 15px;
+      text-align:center;
+    }
+    .cta-box {
+      background:#fff;
+      max-width:600px;
+      margin:auto;
+      padding:40px;
+      border-radius:15px;
+      box-shadow:0 5px 15px rgba(99,91,255,0.1);
+    }
+    .cta-box h2 { font-size:2rem; margin-bottom:15px; }
+    .cta-box p { font-size:1.1rem; margin-bottom:20px; }
+
+    footer p {
+      font-size:0.9rem; color:#6c757d;
+    }
+
+    @keyframes pulse {
+      0% { transform:scale(1); }
+      50% { transform:scale(1.05); }
+      100% { transform:scale(1); }
+    }
+
+    @media(max-width:768px) {
+      .hero-content h1 { text-align:center; font-size:2rem; }
+      .hero-content { text-align:center; }
+      .gif-container { margin:auto; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>QuickCampaigns.io</h1>
+    <span class="beta-badge">FREE BETA</span>
+  </header>
+
+  <div class="container">
+    <section class="hero">
+      <div class="hero-content">
+        <h1>Stop Wasting Time Building Ad Sets <span class="highlight">Manually</span></h1>
+        <p class="subheading">Build Facebook Ad Sets in minutes—not hours. Free during beta.</p>
+        <button class="google-btn">
+          <i class="fab fa-google"></i> Sign Up with Google
+        </button>
+      </div>
+      <div class="gif-container">
+        <div class="gif-placeholder">
+          Creating Ad Sets<br>in Real-Time
+          <div class="gif-label">GIF DEMO</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="benefit-cards">
+      <div class="benefit-card">
+        <div class="benefit-icon"><i class="fas fa-stopwatch"></i></div>
+        <h3>Save Hours</h3>
+        <p>Create 10 ad sets in ~5 minutes instead of 90.</p>
+      </div>
+      <div class="benefit-card">
+        <div class="benefit-icon"><i class="fas fa-lock"></i></div>
+        <h3>Secure Accounts</h3>
+        <p>Stay in control—no sharing with VAs needed.</p>
+      </div>
+      <div class="benefit-card">
+        <div class="benefit-icon"><i class="fas fa-sync-alt"></i></div>
+        <h3>Batch Processing</h3>
+        <p>Generate all ad sets at once—no repetitive clicks.</p>
+      </div>
+    </section>
+
+    <section class="video-testimonials">
+      <h2>What Our Beta Users Say</h2>
+      <div class="videos-container">
+        <div class="video-card">
+          <p>"Saved me 4 hours today!"<br>@SocialMarketer</p>
+          <span class="play-icon"><i class="fas fa-play"></i></span>
+        </div>
+        <div class="video-card">
+          <p>"Game‑changer for scaling"<br>@PPCPro</p>
+          <span class="play-icon"><i class="fas fa-play"></i></span>
+        </div>
+        <div class="video-card">
+          <p>"No more VA trust issues"<br>@MarketingFiend</p>
+          <span class="play-icon"><i class="fas fa-play"></i></span>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-section">
+      <div class="cta-box">
+        <h2>Ready to Save Hours on Campaign Setup?</h2>
+        <p>Join our free beta and streamline your ad workflows.</p>
+        <button class="google-btn">
+          <i class="fab fa-google"></i> Sign Up with Google – It's Free!
+        </button>
+      </div>
+    </section>
+  </div>
+
+  <footer>
+    <p>© 2025 QuickCampaigns.io – Free Beta Access – All rights reserved</p>
+  </footer>
+
+</body>
+</html>
